@@ -4,4 +4,4 @@ var serveStatic = require('serve-static')
 var app = express()
 
 app.use(serveStatic('webapp', {'index': ['index.html']}))
-app.listen(8080)
+app.listen(process.env.port || process.env.PORT ||8080)
