@@ -1,0 +1,23 @@
+{
+  "name": "mariohtml5",
+  "version": "1.0.0",
+  "description": "Infinite Mario in HTML5 JavaScript - using Canvas and Audio elements",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishnaji/mariohtml5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krishnaji/mariohtml5/issues"
+  },
+  "homepage": "https://github.com/krishnaji/mariohtml5#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "serve-static": "^1.13.2"
+  }
+}

@@ -1,11 +1,9 @@
-FROM tomcat:9
+FROM node:6
+WORKDIR /usr/src/app
 
-MAINTAINER github.com/apurvajo
-
-RUN rm -rf /usr/local/tomcat/webapps/ROOT/*
-
-ADD webapp/ /usr/local/tomcat/webapps/ROOT/
+COPY package.json .
+COPY . .
 
 EXPOSE 8080
-CMD ["catalina.sh", "run"]
-
+RUN npm install
+CMD ["npm", "start"]
